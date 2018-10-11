@@ -1,5 +1,5 @@
 var loaderUtils = require('loader-utils');
-var nativejsx = require('nativejsx');
+var nativejsx = require('nativejsx-noproto');
 
 module.exports = function(source) {
   this.cacheable && this.cacheable(true);
@@ -8,7 +8,7 @@ module.exports = function(source) {
   var tree = [];
 
   if (query && (query.prototypes !== 'inline') && (query.prototypes !== 'module')) {
-    tree.push("require('nativejsx/dist/nativejsx-prototypes.js');");
+    tree.push("require('nativejsx-noproto/dist/nativejsx-prototypes.js');");
   }
   tree.push(nativejsx.transpile(source, query));
 
