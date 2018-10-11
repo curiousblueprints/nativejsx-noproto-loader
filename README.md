@@ -1,5 +1,8 @@
-## nativejsx-loader [![Build Status](https://travis-ci.org/treycordova/nativejsx-loader.svg?branch=master)](https://travis-ci.org/treycordova/nativejsx-loader) [![Version Status](https://img.shields.io/npm/v/nativejsx-loader.svg)](https://www.npmjs.org/package/nativejsx-loader)
-#### Webpack loader for [nativejsx](https://github.com/treycordova/nativejsx).
+## nativejsx-noproto-loader
+
+This is a webpack loader to go with the fork of nativejsx that does not add to the HTMLElement prototype. If you are using the original nativejsx, you should use the original nativejsx-loader.
+
+## nativejsx-loader
 So you're using Webpack. Of course you are – have a loader.
 #### Example
 ```javascript
